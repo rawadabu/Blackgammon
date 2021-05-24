@@ -21,21 +21,21 @@ class Board
 public:
     Board(); /*DONE*/
     ~Board();
-    void setBoard();           /*DONE*/
-    void set_turn();           /*DONE*/
-    bool doMove();             /*DONE*/
-    bool playGame();           /*DONE*/
-    int MaxCulUp();            /*DONE*/
-    int MaxCulDown();          /*DONE*/
+    void setBoard();           /*SETTING BOARD*/
+    void set_turn();           /*SETTING TURN*/
+    bool doMove();             /*DO THE NEXT MOVE*/
+    bool playGame();           /*PLAY THE GAME*/
+    int MaxCulUp();            
+    int MaxCulDown();          
     bool blackCorner();        /*CHECKS IF ALL BLACK DISKS AT HOME*/
     bool whiteCorner();        /*CHECKS IF ALL WHITE DISKS AT HOME*/
-    Color checkDiskColor(int); /*DONE*/
-    int checkDiskNumber(int);  /*DONE*/
-    void addDisk(int);         /*DONE*/
-    void deleteDisk(int);      /*DONE*/
-    bool moveDisk(int, int);   /*DONE&NEED MORE IF*/
-    void switchTurn();         /*DONE*/
-    void printBoard();         /*DONE*/
+    Color checkDiskColor(int); 
+    int checkDiskNumber(int);  
+    void addDisk(int);         
+    void deleteDisk(int);      
+    bool moveDisk(int, int);   
+    void switchTurn();         
+    void printBoard();         
     void setSeed(unsigned int);
     void setRandom();
 };
